@@ -68,6 +68,7 @@ const createItem = async (req, res) => {
     const newItem = todolist.todoListItems.at(-1)
     res.status(201).json(newItem)
   } catch (error) {
+    console.log(error)
     res.status(500).json(error)
   }
 }

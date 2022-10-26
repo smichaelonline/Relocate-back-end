@@ -5,7 +5,6 @@ const Schema = mongoose.Schema;
 const todoListItemSchema = new Schema({
   done: {
     type: Boolean,
-    required: true,
   },
   name: {
     type: String,
